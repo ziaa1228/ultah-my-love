@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hadiah Untuk Kamu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #d6eaff, #ffffff);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    #opening {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #d6eaff;
+    }
+
+    #opening h1 {
+      font-size: 2em;
+      color: #1b3c6b;
+      margin-bottom: 20px;
+    }
+
+    #bukaBtn {
+      padding: 12px 25px;
+      font-size: 1.2em;
+      background-color: #1f5c8c;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    #bukaBtn:hover {
+      background-color: #174a6e;
+    }
+
+    #content {
+      display: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    .container {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      color: #0013a0;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 1em;
+      max-width: 90%;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .galeri-foto {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .galeri-foto:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .bg-transparan {
+      position: relative;
+      background: url('trans.jpg') center center no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      padding: 50px 20px;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .bg-transparan::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      z-index: -1;
+    }
+
+    @media (min-width: 600px) {
+      h1 { font-size: 3em; }
+      h2 { font-size: 2em; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Halaman Pembuka -->
+<div id="opening">
+  <h1>Haiii! 🎁</h1>
+  <p>Ini ada hadiah kecil dariku... klik dibawah untuk buka 🥰</p><br>
+  <button id="bukaBtn"><b>Klik untuk Buka</b></button>
+</div>
+
+<!-- Konten Utama -->
+<div id="content">
+  <div id="particles-js"></div>
+
+  <div class="container bg-transparan">
+    <h2 style="font-size: 1.5em; color: #ffffff;">Selamat ulang tahun, kamu yang selalu punya tempat spesial di hatiku...🎉<br></h2>
+  <p style="margin-top: 20px; text-align: center; text-align: justify;">
+
+Aku gak pernah kehabisan alasan buat bersyukur karena pernah mengenal kamu. Sampai detik ini, senyummu masih punya efek paling manis buat hatiku.<br>
+
+Setiap momen yang pernah kita lewati, gak ada satupun yang aku anggap biasa. Kamu selalu berhasil bikin hari-hari aku lebih hidup, lebih hangat, dan lebih berarti.<br>
+
+Aku mungkin gak selalu bisa bilang langsung, tapi perasaan ini gak pernah benar-benar hilang. Kamu tetap orang yang paling sering aku pikirin, diam-diam aku rinduin, dan aku harapin selalu bahagia.<br>
+
+Di hari spesialmu ini, aku cuma mau kamu tahu... masih ada seseorang yang menyimpan doanya buat kamu, yang ingin kamu terus bahagia dengan segala hal baik di dunia ini.<br>
+
+Terima kasih pernah jadi bagian terindah dalam hidupku. Dan walau waktu terus berjalan, rasaku untukmu tetap sama—hangat dan penuh harapan.<br>
+
+Selamat ulang tahun, kamu yang manis. Semoga semua yang kamu inginkan tercapai, dan hati kamu selalu dikelilingi cinta, dari mana pun datangnya.<br>
+
+Dari aku... yang masih menyimpan rasa, dengan cara yang lembut dan tulus.
+    </p>
+  </div>
+
+  <div class="container">
+    <h2 style="margin-bottom: 60px;">Kenangan Manis Kita 📸</h2>
+    <div class="gallery">
+      <img src="foto1.jpg" alt="Foto pertama kita" class="galeri-foto">
+      <img src="foto2.jpg" alt="Foto kedua kita" class="galeri-foto">
+      <img src="foto3.jpg" alt="Foto ketiga kita" class="galeri-foto">
+      <img src="foto4.jpg" alt="Foto keempat kita" class="galeri-foto">
+      <img src="foto5.jpg" alt="Foto kelima kita" class="galeri-foto">
+      <img src="foto6.jpg" alt="Foto keenam kita" class="galeri-foto">
+    </div>
+  </div>
+</div>
+
+<!-- Musik dan Suara -->
+<audio id="musik" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="suara">
+  <source src="suara.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Script Interaksi -->
+<script>
+  const musik = document.getElementById("musik");
+  const suara = document.getElementById("suara");
+
+  document.getElementById("bukaBtn").addEventListener("click", () => {
+    document.getElementById("opening").style.display = "none";
+    document.getElementById("content").style.display = "block";
+
+    musik.volume = 1.0;
+    musik.play().catch(() => {});
+
+    // Setelah 5 detik, mainkan suara dan kecilkan musik
+    setTimeout(() => {
+      suara.play().catch(() => {
+        // jika gagal auto play karena browser
+        document.body.addEventListener("click", () => suara.play(), { once: true });
+      });
+
+      let fadeOut = setInterval(() => {
+        if (musik.volume > 0.2) {
+          musik.volume -= 0.05;
+        } else {
+          clearInterval(fadeOut);
+          musik.volume = 0.2;
+        }
+      }, 300);
+    }, 5000);
+  });
+</script>
+
+<!-- Efek Love -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 40, "density": { "enable": true, "value_area": 800 }},
+      "shape": {
+        "type": "image",
+        "image": {
+          "src": "https://i.ibb.co/VpWTYzk/heart.png",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": { "value": 0.9 },
+      "size": { "value": 20, "random": true },
+      "move": {
+        "enable": true,
+        "speed": 1.8,
+        "direction": "bottom",
+        "out_mode": "out"
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": { "enable": false },
+        "onclick": { "enable": false }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+</body>
+</html>
